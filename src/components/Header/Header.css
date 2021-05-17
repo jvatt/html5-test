@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-color: rgb(173, 181, 189);
+}
+
+.header__logo {
+    width: 32px;
+    height: 32px;
+    background-color: white;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    color: white;
+}

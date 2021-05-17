@@ -1,0 +1,111 @@
+.users {
+    width: 912px;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.users__header {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(117, 117, 117);
+}
+
+/* Form */
+
+.user-form {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.user-form__input {
+    height: 39px;
+    margin: 16px 0 16px 16px;
+    padding: 0 0 0 16px;
+    font-size: 16px;
+}
+
+.user-form__name {
+    width: 20%;
+}
+
+.user-form__email {
+    width: 27%;
+}
+
+.user-form__phone {
+    width: 18%;
+}
+
+.user-form__submit {
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.user-form__edit-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+/* Table */
+
+.user-table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 8px;
+    table-layout: fixed;
+}
+
+.user-table__header {
+    height: 48px;
+    text-align: left;
+    padding-left: 24px;
+    cursor: pointer;
+    color: #757575;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.user-row {
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.user-row__cell {
+    text-align: left;
+    padding: 24px 0 24px 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user-row__name {
+    width: 21%;
+}
+
+.user-row__email {
+    width: 28%;
+}
+
+.user-row__phone {
+    width: 24%;
+}
+
+.user-row__controls {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 24px;
+    width: 72px;
+}
