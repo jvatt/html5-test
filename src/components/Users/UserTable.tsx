@@ -28,9 +28,9 @@ const UserTable = ({users, onEdit, onDelete, onSort, sorting}: UserTableProps) =
             <th/>
         </tr>
         {
-            users.map((user: User, index: number) => {
+            users.map((user: User) => {
                 return <UserRow
-                    key={index}
+                    key={user.id}
                     user={user}
                     onDelete={() => onDelete(user)}
                     onEdit={onEdit}
