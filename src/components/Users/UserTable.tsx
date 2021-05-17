@@ -18,14 +18,25 @@ type UserTableProps = {
 }
 
 const UserTable = ({users, onEdit, onDelete, onSort, sorting}: UserTableProps) => {
-    const arrow = sorting.descending ? <MdArrowDownward/> : <MdArrowUpward/>
+    const arrow = sorting.descending ? <MdArrowDownward style={{paddingLeft: "8px"}}/> : <MdArrowUpward style={{paddingLeft: "8px"}}/>
     return (<table className="user-table">
         <tbody>
         <tr className="user-row">
-            <th onClick={() => onSort("name")} className="user-row__name user-table__header unselectable">Name {sorting.type === "name" ? arrow : null }</th>
-            <th onClick={() => onSort("email")} className="user-row__email user-table__header unselectable">E-mail address {sorting.type === "email" ? arrow : null }</th>
-            <th onClick={() => onSort("phone")} className="user-row__phone user-table__header unselectable">Phone number {sorting.type === "phone" ? arrow : null }</th>
-            <th/>
+            <th onClick={() => onSort("name")} className="user-row__name user-table__header unselectable">
+                <div className="user-table__header-content">
+                    Name {sorting.type === "name" ? arrow : null }
+                </div>
+            </th>
+            <th onClick={() => onSort("email")} className="user-row__email user-table__header unselectable">
+                <div className="user-table__header-content">
+                    E-mail address {sorting.type === "email" ? arrow : null }
+                </div>
+            </th>
+            <th onClick={() => onSort("phone")} className="user-row__phone user-table__header unselectable">
+                <div className="user-table__header-content">
+                    Phone number {sorting.type === "phone" ? arrow : null }
+                </div>
+            </th>
         </tr>
         {
             users.map((user: User) => {
