@@ -1,9 +1,9 @@
 # HTML 5 Test
 
-###Prerequisites
+### Prerequisites
 [NPM](https://nodejs.org/)
 
-###Setup:
+### Setup:
 ```
 npm install
 ```
