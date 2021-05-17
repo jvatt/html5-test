@@ -37,6 +37,7 @@ const UserTable = ({users, onEdit, onDelete, onSort, sorting}: UserTableProps) =
                     Phone number {sorting.type === "phone" ? arrow : null }
                 </div>
             </th>
+            <th/>
         </tr>
         {
             users.map((user: User) => {
