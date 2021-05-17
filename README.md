@@ -1,4 +1,4 @@
-# HTML 5 Test
+# HTML5 Test
 
 ### Prerequisites
 [NPM](https://nodejs.org/)
